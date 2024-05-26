@@ -1,0 +1,11 @@
+h1,p{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gif3{
+    border-radius: 30%;
+}
