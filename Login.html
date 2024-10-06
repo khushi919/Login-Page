@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login Page</title>
 </head>
-
 <body>
   <img src="img/hi.gif" alt="Hi GIF" class="gif1">
-  <img src="img/login.gif" alt="Hi GIF" class="gif2">
-<form method="post">
-  <div class="imgcontainer">
-    <img src="img/avatar.jpg" alt="Avatar" class="avatar">
-  </div>
+  <img src="img/login.gif" alt="Login GIF" class="gif2">
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname">
+  <form method="post" action="Successful.html">
+    <div class="imgcontainer">
+      <img src="img/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw">
-    
-    <label>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+      <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
 
-    <button type="submit"><a href="Successful.html" target="_self">Login</a></button>
-  </div>
+      <!-- The button will submit the form, and you can handle post-login behavior on the server or via JavaScript -->
+      <button type="submit">Login</button>
+    </div>
 
-  <!-- <div class="forgot">
-    <span class="psw"><a href="#">Forgot password?</a></span>
-  </div> -->
-</form>
+    <!-- Uncomment this section if you want to include a "Forgot password?" link -->
+    <!-- <div class="forgot">
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div> -->
+  </form>
 </body>
 </html>
